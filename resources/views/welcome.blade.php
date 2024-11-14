@@ -90,22 +90,28 @@
             <h2 class="text-3xl font-bold text-gray-900 mb-8">Work</h2>
             <div class="grid grid-cols-1 gap-6">
                 <!-- Thunk -->
-                <div class="bg-gray-50 rounded-lg p-6">
-                    <h3 class="text-xl font-semibold mb-2"><a href="https://thunk.dev" target="_blank">Thunk</a></h3>
-                    <p class="text-gray-600">I am a partner and product manager at Thunk. We build custom software for clients, and do consulting as well. If you want to work with us, reach out at john@thunk.dev.</p>
-                </div>
+                <a href="https://thunk.dev" target="_blank">
+                    <div class="bg-gray-50 rounded-lg p-6">
+                        <h3 class="text-xl font-semibold mb-2">Thunk</h3>
+                        <p class="text-gray-600">I am a partner and product manager at Thunk. We build custom software for clients, and do consulting as well. If you want to work with us, reach out at john@thunk.dev.</p>
+                    </div>
+                </a>
                 
                 <!-- Binti -->
-                <div class="bg-gray-50 rounded-lg p-6">
-                    <h3 class="text-xl font-semibold mb-2"><a href="https://binti.com" target="_blank">Binti</a></h3>
-                    <p class="text-gray-600">Most recently I served as a Product Manager at Binti. We built a high-impact, mission driven product. I got my Product Management chops, and it made me want to get closer to the code.</p>
-                </div>
+                <a href="https://binti.com" target="_blank">
+                    <div class="bg-gray-50 rounded-lg p-6">
+                        <h3 class="text-xl font-semibold mb-2">Binti</h3>
+                        <p class="text-gray-600">Most recently I served as a Product Manager at Binti. We built a high-impact, mission driven product. I got my Product Management chops, and it made me want to get closer to the code.</p>
+                    </div>
+                </a>
                 
                 <!-- Sovereign's Capital -->
-                <div class="bg-gray-50 rounded-lg p-6">
-                    <h3 class="text-xl font-semibold mb-2"><a href="https://sovereignscapital.com/" target="_blank">Sovereign's Capital</a></h3>
-                    <p class="text-gray-600">My career started with a long stint in Venture Capital. I spent thousands of hours talking to founders, analyzing companies, and talking strategy. It made me want to get closer to the product.</p>
-                </div>
+                <a href="https://sovereignscapital.com/" target="_blank">
+                    <div class="bg-gray-50 rounded-lg p-6">
+                        <h3 class="text-xl font-semibold mb-2">Sovereign's Capital</h3>
+                        <p class="text-gray-600">My career started with a long stint in Venture Capital. I spent thousands of hours talking to founders, analyzing companies, and talking strategy. It made me want to get closer to the product.</p>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
@@ -116,14 +122,18 @@
             <h2 class="text-3xl font-bold text-gray-900 mb-8">Games</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <!-- Add your games content here -->
-                <div class="bg-white rounded-lg p-6 shadow">
-                    <h3 class="text-xl font-semibold mb-2"><a href="https://www.catacombian.com/" target="_blank">Colossi</a></h3>
-                    <p class="text-gray-600">In 2024 I published Colossi, a tactical card game that makes you feel clever and devious.</p>
-                </div>
-                <div class="bg-white rounded-lg p-6 shadow">
-                    <h3 class="text-xl font-semibold mb-2"><a href="https://discord.gg/yfMGwBvTuj" target="_blank">Join the Discord</a></h3>
-                    <p class="text-gray-600">I have many more prototypes, and I'm always working on something. If you want to test them out, follow along, or hang out with other game designers, join the Discord.</p>
-                </div>
+                <a href="https://www.catacombian.com/" target="_blank">
+                    <div class="bg-white rounded-lg p-6 shadow">
+                        <h3 class="text-xl font-semibold mb-2">Colossi</h3>
+                        <p class="text-gray-600">In 2024 I published Colossi, a tactical card game that makes you feel clever and devious.</p>
+                    </div>
+                </a>
+                <a href="https://discord.gg/yfMGwBvTuj" target="_blank">
+                    <div class="bg-white rounded-lg p-6 shadow">
+                        <h3 class="text-xl font-semibold mb-2">Join the Discord</h3>
+                        <p class="text-gray-600">I have many more prototypes, and I'm always working on something. If you want to test them out, follow along, or hang out with other game designers, join the Discord.</p>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
@@ -133,14 +143,18 @@
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl font-bold text-gray-900 mb-8">Other stuff</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="bg-gray-50 rounded-lg p-6">
-                    <h3 class="text-xl font-semibold mb-2"><a href="https://lindseyevans.work/" target="_blank">Lindsey</a></h3>
-                    <p class="text-gray-600">I'm madly in love with Lindsey. She is my favorite person. She is also an incredibly talented art director.</p>
-                </div>
-                <div class="bg-gray-50 rounded-lg p-6">
-                    <h3 class="text-xl font-semibold mb-2"><a href="https://marcelogarciajj.com/nyc/" target="_blank">Jiu Jitsu</a></h3>
-                    <p class="text-gray-600">I'm a purple belt in Jiu Jitsu. If you train and you're in NYC, let's train together at Marcelo Garcia Academy.</p>
-                </div>
+                <a href="https://lindseyevans.work/" target="_blank">
+                    <div class="bg-gray-50 rounded-lg p-6">
+                        <h3 class="text-xl font-semibold mb-2">Lindsey</h3>
+                        <p class="text-gray-600">I'm madly in love with Lindsey. She is my favorite person. She is also an incredibly talented art director.</p>
+                    </div>
+                </a>
+                <a href="https://marcelogarciajj.com/nyc/" target="_blank">
+                    <div class="bg-gray-50 rounded-lg p-6">
+                        <h3 class="text-xl font-semibold mb-2">Jiu Jitsu</h3>
+                        <p class="text-gray-600">I'm a purple belt in Jiu Jitsu. If you train and you're in NYC, let's train together at Marcelo Garcia Academy.</p>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
