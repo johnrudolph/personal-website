@@ -1,14 +1,14 @@
 <x-guest-layout>
     <!-- Hero/Header Section -->
     <div class="bg-gray-50">
-        <div class="container mx-auto px-4 py-16 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div class="container mx-auto px-4 py-8 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
                 <div>
-                    <h1 class="text-4xl font-bold text-gray-900 mb-4">John Rudolph Drexler</h1>
-                    <p class="text-lg text-gray-600 mb-6">
+                    <h1 class="text-3xl font-bold text-gray-900 mb-3">John Rudolph Drexler</h1>
+                    <p class="text-base text-gray-600 mb-4">
                         Product Manager and Game Developer
                     </p>
-                    <div class="container mx-auto px-4 py-8 flex justify-center space-x-4">
+                    <div class="container mx-auto px-4 py-4 flex justify-center space-x-4">
                         <!-- Bluesky -->
                         <a href="https://bsky.app/profile/johnrudolphdrexler.com" target="_blank" class="text-gray-400 hover:text-gray-600">
                             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 600 600" aria-hidden="true">
@@ -85,31 +85,31 @@
     </div>
 
     <!-- Work Section -->
-    <div class="bg-white py-8">
+    <div class="bg-white py-6">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold text-gray-900 mb-8">Work</h2>
-            <div class="grid grid-cols-1 gap-6">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Work</h2>
+            <div class="grid grid-cols-1 gap-4">
                 <!-- Thunk -->
                 <a href="https://thunk.dev" target="_blank">
-                    <div class="bg-gray-50 rounded-lg p-6">
-                        <h3 class="text-xl font-semibold mb-2">Thunk</h3>
-                        <p class="text-gray-600">I am a partner and product manager at Thunk. We build custom software for clients, and do consulting as well. If you want to work with us, reach out at john@thunk.dev.</p>
+                    <div class="bg-gray-50 rounded-lg p-4">
+                        <h3 class="text-lg font-semibold mb-2">Thunk</h3>
+                        <p class="text-gray-600 text-sm">I am a partner and product manager at Thunk. We build custom software for clients, and do consulting as well. If you want to work with us, reach out at john@thunk.dev.</p>
                     </div>
                 </a>
                 
                 <!-- Binti -->
                 <a href="https://binti.com" target="_blank">
-                    <div class="bg-gray-50 rounded-lg p-6">
-                        <h3 class="text-xl font-semibold mb-2">Binti</h3>
-                        <p class="text-gray-600">Most recently I served as a Product Manager at Binti. We built a high-impact, mission driven product. I got my Product Management chops, and it made me want to get closer to the code.</p>
+                    <div class="bg-gray-50 rounded-lg p-4">
+                        <h3 class="text-lg font-semibold mb-2">Binti</h3>
+                        <p class="text-gray-600 text-sm">Most recently I served as a Product Manager at Binti. We built a high-impact, mission driven product. I got my Product Management chops, and it made me want to get closer to the code.</p>
                     </div>
                 </a>
                 
                 <!-- Sovereign's Capital -->
                 <a href="https://sovereignscapital.com/" target="_blank">
-                    <div class="bg-gray-50 rounded-lg p-6">
-                        <h3 class="text-xl font-semibold mb-2">Sovereign's Capital</h3>
-                        <p class="text-gray-600">My career started with a long stint in Venture Capital. I spent thousands of hours talking to founders, analyzing companies, and talking strategy. It made me want to get closer to the product.</p>
+                    <div class="bg-gray-50 rounded-lg p-4">
+                        <h3 class="text-lg font-semibold mb-2">Sovereign's Capital</h3>
+                        <p class="text-gray-600 text-sm">My career started with a long stint in Venture Capital. I spent thousands of hours talking to founders, analyzing companies, and talking strategy. It made me want to get closer to the product.</p>
                     </div>
                 </a>
             </div>
@@ -117,27 +117,27 @@
     </div>
 
     <!-- Games Section -->
-    <div class="bg-gray-50 py-16">
+    <div class="bg-gray-50 py-8">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold text-gray-900 mb-8">Games</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Games</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <!-- Add your games content here -->
                 <a href="https://www.catacombian.com/" target="_blank">
-                    <div class="bg-white rounded-lg p-6 shadow">
-                        <h3 class="text-xl font-semibold mb-2">Colossi</h3>
-                        <p class="text-gray-600">In 2024 I published Colossi, a tactical card game that makes you feel clever and devious.</p>
+                    <div class="bg-white rounded-lg p-4 shadow">
+                        <h3 class="text-lg font-semibold mb-2">Colossi</h3>
+                        <p class="text-gray-600 text-sm">In 2024 I published Colossi, a tactical card game that makes you feel clever and devious.</p>
                     </div>
                 </a>
                 <a href="https://www.elephantintheroom.fun/" target="_blank">
-                    <div class="bg-white rounded-lg p-6 shadow">
-                        <h3 class="text-xl font-semibold mb-2">Elephant in the Room</h3>
-                        <p class="text-gray-600">A quick, free, 2-player web game. Play your friends, or challenge the bot.</p>
+                    <div class="bg-white rounded-lg p-4 shadow">
+                        <h3 class="text-lg font-semibold mb-2">Elephant in the Room</h3>
+                        <p class="text-gray-600 text-sm">A quick, free, 2-player web game. Play your friends, or challenge the bot.</p>
                     </div>
                 </a>
                 <a href="https://discord.gg/yfMGwBvTuj" target="_blank">
-                    <div class="bg-white rounded-lg p-6 shadow">
-                        <h3 class="text-xl font-semibold mb-2">Join the Discord</h3>
-                        <p class="text-gray-600">I have many more prototypes, and I'm always working on something. If you want to test them out, follow along, or hang out with other game designers, join the Discord.</p>
+                    <div class="bg-white rounded-lg p-4 shadow">
+                        <h3 class="text-lg font-semibold mb-2">Join the Discord</h3>
+                        <p class="text-gray-600 text-sm">I have many more prototypes, and I'm always working on something. If you want to test them out, follow along, or hang out with other game designers, join the Discord.</p>
                     </div>
                 </a>
             </div>
@@ -145,21 +145,21 @@
     </div>
 
     <!-- Talks Section -->
-    <div class="bg-gray-50 py-16">
+    <div class="bg-white py-8">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold text-gray-900 mb-8">Talks</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <!-- Add your games content here -->
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Talks</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <!-- Add your talks content here -->
                 <a href="https://www.youtube.com/watch?v=RfRp6CwKoVU" target="_blank">
-                    <div class="bg-white rounded-lg p-6 shadow">
-                        <h3 class="text-xl font-semibold mb-2">Don't solve non-problems</h3>
-                        <p class="text-gray-600">A jargon-free primer on product management. From Laracon EU 2025.</p>
+                    <div class="bg-white rounded-lg p-4 shadow">
+                        <h3 class="text-lg font-semibold mb-2">Don't solve non-problems</h3>
+                        <p class="text-gray-600 text-sm">A jargon-free primer on product management. From Laracon EU 2025.</p>
                     </div>
                 </a>
                 <a href="https://www.youtube.com/watch?v=15SvneWq9Vg" target="_blank">
-                    <div class="bg-white rounded-lg p-6 shadow">
-                        <h3 class="text-xl font-semibold mb-2">Stone soup</h3>
-                        <p class="text-gray-600">I spent 1200 hours building a game that failed. But it gave me everything.</p>
+                    <div class="bg-white rounded-lg p-4 shadow">
+                        <h3 class="text-lg font-semibold mb-2">Stone soup</h3>
+                        <p class="text-gray-600 text-sm">I spent 1200 hours building a game that failed. But it gave me everything.</p>
                     </div>
                 </a>
             </div>
@@ -167,20 +167,20 @@
     </div>
 
     <!-- Other Section -->
-    <div class="bg-white py-16">
+    <div class="bg-gray-50 py-8">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold text-gray-900 mb-8">Other stuff</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Other stuff</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 <a href="https://lindseyevans.work/" target="_blank">
-                    <div class="bg-gray-50 rounded-lg p-6">
-                        <h3 class="text-xl font-semibold mb-2">Lindsey</h3>
-                        <p class="text-gray-600">I'm madly in love with Lindsey. She is my favorite person. She is also an incredibly talented art director.</p>
+                    <div class="bg-gray-50 rounded-lg p-4">
+                        <h3 class="text-lg font-semibold mb-2">Lindsey</h3>
+                        <p class="text-gray-600 text-sm">I'm madly in love with Lindsey. She is my favorite person. She is also an incredibly talented art director.</p>
                     </div>
                 </a>
                 <a href="https://marcelogarciajj.com/nyc/" target="_blank">
-                    <div class="bg-gray-50 rounded-lg p-6">
-                        <h3 class="text-xl font-semibold mb-2">Jiu Jitsu</h3>
-                        <p class="text-gray-600">I'm a purple belt in Jiu Jitsu. If you train and you're in NYC, let's train together at Marcelo Garcia Academy.</p>
+                    <div class="bg-gray-50 rounded-lg p-4">
+                        <h3 class="text-lg font-semibold mb-2">Jiu Jitsu</h3>
+                        <p class="text-gray-600 text-sm">I'm a purple belt in Jiu Jitsu. If you train and you're in NYC, let's train together at Marcelo Garcia Academy.</p>
                     </div>
                 </a>
             </div>
