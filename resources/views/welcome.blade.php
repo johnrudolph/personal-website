@@ -120,7 +120,7 @@
     <div class="bg-gray-50 w-full">
         <div class="max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
             <h2 class="text-2xl font-bold text-gray-900 mb-6">Games</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="grid grid-cols-1 gap-4">
                 <!-- Add your games content here -->
                 <a href="https://www.catacombian.com/" target="_blank">
                     <div class="bg-white rounded-lg p-4 shadow">
@@ -148,7 +148,7 @@
     <div class="bg-white w-full">
         <div class="max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
             <h2 class="text-2xl font-bold text-gray-900 mb-6">Talks</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="grid grid-cols-1 gap-4">
                 <!-- Add your talks content here -->
                 <a href="https://www.youtube.com/watch?v=RfRp6CwKoVU" target="_blank">
                     <div class="bg-white rounded-lg p-4 shadow">
@@ -170,15 +170,15 @@
     <div class="bg-gray-50 w-full">
         <div class="max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
             <h2 class="text-2xl font-bold text-gray-900 mb-6">Other stuff</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="grid grid-cols-1 gap-4">
                 <a href="https://lindseyevans.work/" target="_blank">
-                    <div class="bg-gray-50 rounded-lg p-4">
+                    <div class="bg-white rounded-lg p-4">
                         <h3 class="text-lg font-semibold mb-2">Lindsey</h3>
                         <p class="text-gray-600 text-sm">I'm madly in love with Lindsey. She is my favorite person. She is also an incredibly talented art director.</p>
                     </div>
                 </a>
                 <a href="https://marcelogarciajj.com/nyc/" target="_blank">
-                    <div class="bg-gray-50 rounded-lg p-4">
+                    <div class="bg-white rounded-lg p-4">
                         <h3 class="text-lg font-semibold mb-2">Jiu Jitsu</h3>
                         <p class="text-gray-600 text-sm">I'm a purple belt in Jiu Jitsu. If you train and you're in NYC, let's train together at Marcelo Garcia Academy.</p>
                     </div>
