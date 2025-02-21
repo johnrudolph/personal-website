@@ -1,7 +1,7 @@
 <x-guest-layout>
     <!-- Hero/Header Section -->
-    <div class="bg-gray-50">
-        <div class="container mx-auto px-4 py-8 sm:px-6 lg:px-8">
+    <div class="bg-gray-50 w-full">
+        <div class="max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
                 <div>
                     <h1 class="text-3xl font-bold text-gray-900 mb-3">John Rudolph Drexler</h1>
@@ -85,8 +85,8 @@
     </div>
 
     <!-- Work Section -->
-    <div class="bg-white py-6">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="bg-white w-full">
+        <div class="max-w-7xl mx-auto px-4 py-6 sm:px-6 lg:px-8">
             <h2 class="text-2xl font-bold text-gray-900 mb-6">Work</h2>
             <div class="grid grid-cols-1 gap-4">
                 <!-- Thunk -->
@@ -117,8 +117,8 @@
     </div>
 
     <!-- Games Section -->
-    <div class="bg-gray-50 py-8">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="bg-gray-50 w-full">
+        <div class="max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
             <h2 class="text-2xl font-bold text-gray-900 mb-6">Games</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <!-- Add your games content here -->
@@ -145,8 +145,8 @@
     </div>
 
     <!-- Talks Section -->
-    <div class="bg-white py-8">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="bg-white w-full">
+        <div class="max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
             <h2 class="text-2xl font-bold text-gray-900 mb-6">Talks</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <!-- Add your talks content here -->
@@ -167,8 +167,8 @@
     </div>
 
     <!-- Other Section -->
-    <div class="bg-gray-50 py-8">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="bg-gray-50 w-full">
+        <div class="max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
             <h2 class="text-2xl font-bold text-gray-900 mb-6">Other stuff</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 <a href="https://lindseyevans.work/" target="_blank">
