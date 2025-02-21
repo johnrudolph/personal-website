@@ -128,10 +128,38 @@
                         <p class="text-gray-600">In 2024 I published Colossi, a tactical card game that makes you feel clever and devious.</p>
                     </div>
                 </a>
+                <a href="https://www.elephantintheroom.fun/" target="_blank">
+                    <div class="bg-white rounded-lg p-6 shadow">
+                        <h3 class="text-xl font-semibold mb-2">Elephant in the Room</h3>
+                        <p class="text-gray-600">A quick, free, 2-player web game. Play your friends, or challenge the bot.</p>
+                    </div>
+                </a>
                 <a href="https://discord.gg/yfMGwBvTuj" target="_blank">
                     <div class="bg-white rounded-lg p-6 shadow">
                         <h3 class="text-xl font-semibold mb-2">Join the Discord</h3>
                         <p class="text-gray-600">I have many more prototypes, and I'm always working on something. If you want to test them out, follow along, or hang out with other game designers, join the Discord.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Talks Section -->
+    <div class="bg-gray-50 py-16">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-gray-900 mb-8">Talks</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Add your games content here -->
+                <a href="https://www.youtube.com/watch?v=RfRp6CwKoVU" target="_blank">
+                    <div class="bg-white rounded-lg p-6 shadow">
+                        <h3 class="text-xl font-semibold mb-2">Don't solve non-problems</h3>
+                        <p class="text-gray-600">A jargon-free primer on product management. From Laracon EU 2025.</p>
+                    </div>
+                </a>
+                <a href="https://www.youtube.com/watch?v=15SvneWq9Vg" target="_blank">
+                    <div class="bg-white rounded-lg p-6 shadow">
+                        <h3 class="text-xl font-semibold mb-2">Stone soup</h3>
+                        <p class="text-gray-600">I spent 1200 hours building a game that failed. But it gave me everything.</p>
                     </div>
                 </a>
             </div>
