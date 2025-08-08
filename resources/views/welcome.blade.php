@@ -124,14 +124,16 @@
                 <!-- Add your games content here -->
                 <a href="https://www.catacombian.com/" target="_blank">
                     <div class="bg-white rounded-lg p-4 shadow">
+                        <img src="/images/colossi-wide.png" alt="Colossi Game" class="w-full h-64 object-cover rounded-lg mb-4">
                         <h3 class="text-lg font-semibold mb-2">Colossi</h3>
-                        <p class="text-gray-600 text-sm">In 2024 I published Colossi, a tactical card game that makes you feel clever and devious.</p>
+                        <p class="text-gray-600 text-sm">Colossi is a 2-4 player card game that makes you feel clever and devious. I ran a Kickstarter in 2023, and published in 2024.</p>
                     </div>
                 </a>
-                <a href="https://www.elephantintheroom.fun/" target="_blank">
+                <a href="https://thesocialgame.gg/" target="_blank">
                     <div class="bg-white rounded-lg p-4 shadow">
-                        <h3 class="text-lg font-semibold mb-2">Elephant in the Room</h3>
-                        <p class="text-gray-600 text-sm">A quick, free, 2-player web game. Play your friends, or challenge the bot.</p>
+                        <img src="/images/the-social-game.png" alt="The Social Game" class="w-full h-64 object-cover rounded-lg mb-4">
+                        <h3 class="text-lg font-semibold mb-2">The Social Game</h3>
+                        <p class="text-gray-600 text-sm">A platform of games for groups of all sizes: from family game night to 1000 person conferences.</p>
                     </div>
                 </a>
                 <a href="https://discord.gg/yfMGwBvTuj" target="_blank">
@@ -152,6 +154,7 @@
                 <!-- Add your talks content here -->
                 <a href="https://www.youtube.com/watch?v=RfRp6CwKoVU" target="_blank">
                     <div class="bg-white rounded-lg p-4 shadow">
+                        <img src="/images/laracon-eu.png" alt="Laracon EU Talk" class="w-full h-64 object-cover rounded-lg mb-4">
                         <h3 class="text-lg font-semibold mb-2">Don't solve non-problems</h3>
                         <p class="text-gray-600 text-sm">A jargon-free primer on product management. From Laracon EU 2025.</p>
                     </div>
