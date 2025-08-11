@@ -162,7 +162,7 @@
                     <div class="bg-white rounded-lg p-4 shadow">
                         <img src="/images/laracon-us-2025.png" alt="Laracon US 2025 Talk" class="w-full h-64 object-cover rounded-lg mb-4">
                         <h3 class="text-lg font-semibold mb-2">Building the High Trust Environment</h3>
-                        <p class="text-gray-600 text-sm">5 practical things developers can do to build trust with non-technical colleagues.</p>
+                        <p class="text-gray-600 text-sm">5 ways developers can build trust with non-technical colleagues.</p>
                     </div>
                 </a>
                 <a href="https://www.youtube.com/watch?v=15SvneWq9Vg" target="_blank">
