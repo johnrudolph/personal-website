@@ -116,38 +116,7 @@
         </div>
     </div>
 
-    <!-- Games Section -->
     <div class="bg-gray-50 w-full">
-        <div class="max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
-            <h2 class="text-2xl font-bold text-gray-900 mb-6">Games</h2>
-            <div class="grid grid-cols-1 gap-4">
-                <!-- Add your games content here -->
-                <a href="https://www.catacombian.com/" target="_blank">
-                    <div class="bg-white rounded-lg p-4 shadow">
-                        <img src="/images/colossi-wide.png" alt="Colossi Game" class="w-full h-64 object-cover rounded-lg mb-4">
-                        <h3 class="text-lg font-semibold mb-2">Colossi</h3>
-                        <p class="text-gray-600 text-sm">Colossi is a 2-4 player card game that makes you feel clever and devious. I ran a Kickstarter in 2023, and published in 2024.</p>
-                    </div>
-                </a>
-                <a href="https://thesocialgame.gg/" target="_blank">
-                    <div class="bg-white rounded-lg p-4 shadow">
-                        <img src="/images/the-social-game.png" alt="The Social Game" class="w-full h-64 object-cover rounded-lg mb-4">
-                        <h3 class="text-lg font-semibold mb-2">The Social Game</h3>
-                        <p class="text-gray-600 text-sm">A platform of games for groups of all sizes: from family game night to 1000 person conferences.</p>
-                    </div>
-                </a>
-                <a href="https://discord.gg/yfMGwBvTuj" target="_blank">
-                    <div class="bg-white rounded-lg p-4 shadow">
-                        <h3 class="text-lg font-semibold mb-2">Join the Discord</h3>
-                        <p class="text-gray-600 text-sm">I have many more prototypes, and I'm always working on something. If you want to test them out, follow along, or hang out with other game designers, join the Discord.</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <!-- Talks Section -->
-    <div class="bg-white w-full">
         <div class="max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
             <h2 class="text-2xl font-bold text-gray-900 mb-6">Talks</h2>
             <div class="grid grid-cols-1 gap-4">
@@ -174,6 +143,37 @@
             </div>
         </div>
     </div>
+
+    <!-- Games Section -->
+    <div class="bg-white w-full">
+        <div class="max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Games</h2>
+            <div class="grid grid-cols-1 gap-4">
+                <!-- Add your games content here -->
+                <a href="https://www.catacombian.com/" target="_blank">
+                    <div class="bg-gray-50 rounded-lg p-4 shadow">
+                        <img src="/images/colossi-wide.png" alt="Colossi Game" class="w-full h-64 object-cover rounded-lg mb-4">
+                        <h3 class="text-lg font-semibold mb-2">Colossi</h3>
+                        <p class="text-gray-600 text-sm">Colossi is a 2-4 player card game that makes you feel clever and devious. I ran a Kickstarter in 2023, and published in 2024.</p>
+                    </div>
+                </a>
+                <a href="https://thesocialgame.gg/" target="_blank">
+                    <div class="bg-gray-50 rounded-lg p-4 shadow">
+                        <img src="/images/the-social-game.png" alt="The Social Game" class="w-full h-64 object-cover rounded-lg mb-4">
+                        <h3 class="text-lg font-semibold mb-2">The Social Game</h3>
+                        <p class="text-gray-600 text-sm">A platform of games for groups of all sizes: from family game night to 1000 person conferences.</p>
+                    </div>
+                </a>
+                <a href="https://discord.gg/yfMGwBvTuj" target="_blank">
+                    <div class="bg-gray-50 rounded-lg p-4 shadow">
+                        <h3 class="text-lg font-semibold mb-2">Join the Discord</h3>
+                        <p class="text-gray-600 text-sm">I have many more prototypes, and I'm always working on something. If you want to test them out, follow along, or hang out with other game designers, join the Discord.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Other Section -->
     <div class="bg-gray-50 w-full">
