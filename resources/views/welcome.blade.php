@@ -151,12 +151,18 @@
         <div class="max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
             <h2 class="text-2xl font-bold text-gray-900 mb-6">Talks</h2>
             <div class="grid grid-cols-1 gap-4">
-                <!-- Add your talks content here -->
                 <a href="https://www.youtube.com/watch?v=RfRp6CwKoVU" target="_blank">
                     <div class="bg-white rounded-lg p-4 shadow">
                         <img src="/images/laracon-eu.png" alt="Laracon EU Talk" class="w-full h-64 object-cover rounded-lg mb-4">
                         <h3 class="text-lg font-semibold mb-2">Don't solve non-problems</h3>
                         <p class="text-gray-600 text-sm">A jargon-free primer on product management. From Laracon EU 2025.</p>
+                    </div>
+                </a>
+                <a href="https://www.youtube.com/watch?v=Zki4d6sHhy4" target="_blank">
+                    <div class="bg-white rounded-lg p-4 shadow">
+                        <img src="/images/laracon-us-2025.png" alt="Laracon US 2025 Talk" class="w-full h-64 object-cover rounded-lg mb-4">
+                        <h3 class="text-lg font-semibold mb-2">Building the High Trust Environment</h3>
+                        <p class="text-gray-600 text-sm">5 practical things developers can do to build trust with non-technical colleagues.</p>
                     </div>
                 </a>
                 <a href="https://www.youtube.com/watch?v=15SvneWq9Vg" target="_blank">
