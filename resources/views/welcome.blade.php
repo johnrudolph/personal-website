@@ -174,20 +174,47 @@
         </div>
     </div>
 
+    <!-- Podcasts -->
+    <div class="bg-gray-50 w-full">
+        <div class="max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Podcasts</h2>
+            <div class="grid grid-cols-1 gap-4">
+                <a href="https://podcast.thunk.dev/" target="_blank">
+                    <div class="bg-white rounded-lg p-4 flex items-start space-x-4">
+                        <img src="/images/talking-businessly.png" alt="Talking Businessly" class="w-24 h-24 object-cover rounded-lg flex-shrink-0">
+                        <div class="flex-1">
+                            <h3 class="text-lg font-semibold mb-2">Talking Businessly</h3>
+                            <p class="text-gray-600 text-sm">A candid conversation about running a software development agency.</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://notesonplay.transistor.fm/" target="_blank">
+                    <div class="bg-white rounded-lg p-4 flex items-start space-x-4">
+                        <img src="/images/notes-on-play.png" alt="Notes on Play" class="w-24 h-24 object-cover rounded-lg flex-shrink-0">
+                        <div class="flex-1">
+                            <h3 class="text-lg font-semibold mb-2">Notes on Play</h3>
+                            <p class="text-gray-600 text-sm">A short and sweet game development log, where I discuss the hardest game design problems I'm facing.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Other Section -->
-    <div class="bg-gray-50 w-full">
+    <div class="bg-white w-full">
         <div class="max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
             <h2 class="text-2xl font-bold text-gray-900 mb-6">Other stuff</h2>
             <div class="grid grid-cols-1 gap-4">
                 <a href="https://lindseyevans.work/" target="_blank">
-                    <div class="bg-white rounded-lg p-4">
+                    <div class="bg-gray-50 rounded-lg p-4">
                         <h3 class="text-lg font-semibold mb-2">Lindsey</h3>
                         <p class="text-gray-600 text-sm">I'm madly in love with Lindsey. She is my favorite person. She is also an incredibly talented art director.</p>
                     </div>
                 </a>
                 <a href="https://marcelogarciajj.com/nyc/" target="_blank">
-                    <div class="bg-white rounded-lg p-4">
+                    <div class="bg-gray-50 rounded-lg p-4">
                         <h3 class="text-lg font-semibold mb-2">Jiu Jitsu</h3>
                         <p class="text-gray-600 text-sm">I'm a purple belt in Jiu Jitsu. If you train and you're in NYC, let's train together at Marcelo Garcia Academy.</p>
                     </div>
