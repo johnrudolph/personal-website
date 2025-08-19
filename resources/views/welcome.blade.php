@@ -180,8 +180,8 @@
             <h2 class="text-2xl font-bold text-gray-900 mb-6">Podcasts</h2>
             <div class="grid grid-cols-1 gap-4">
                 <a href="https://podcast.thunk.dev/" target="_blank">
-                    <div class="bg-white rounded-lg p-4 flex items-start space-x-4">
-                        <img src="/images/talking-businessly.png" alt="Talking Businessly" class="w-24 h-24 object-cover rounded-lg flex-shrink-0">
+                    <div class="bg-white rounded-lg p-4 flex items-start space-x-3">
+                        <img src="/images/talking-businessly.png" alt="Talking Businessly" class="w-16 h-16 object-cover rounded-lg flex-shrink-0">
                         <div class="flex-1">
                             <h3 class="text-lg font-semibold mb-2">Talking Businessly</h3>
                             <p class="text-gray-600 text-sm">A candid conversation about running a software development agency.</p>
@@ -189,8 +189,8 @@
                     </div>
                 </a>
                 <a href="https://notesonplay.transistor.fm/" target="_blank">
-                    <div class="bg-white rounded-lg p-4 flex items-start space-x-4">
-                        <img src="/images/notes-on-play.png" alt="Notes on Play" class="w-24 h-24 object-cover rounded-lg flex-shrink-0">
+                    <div class="bg-white rounded-lg p-4 flex items-start space-x-3">
+                        <img src="/images/notes-on-play.png" alt="Notes on Play" class="w-16 h-16 object-cover rounded-lg flex-shrink-0">
                         <div class="flex-1">
                             <h3 class="text-lg font-semibold mb-2">Notes on Play</h3>
                             <p class="text-gray-600 text-sm">A short and sweet game development log, where I discuss the hardest game design problems I'm facing.</p>
