@@ -18,7 +18,7 @@ function Nav() {
           <a href="#voice">Talks &amp; podcasts</a>
           <a href="#beyond">Beyond work</a>
         </nav>
-        <a href="#contact" className="nav-cta">Start a conversation</a>
+        <a href="#contact" className="nav-cta">Let's chat</a>
       </div>
     </header>
   );
@@ -36,7 +36,7 @@ function Hero({ onPickScope }) {
             Work with a trusted fractional PM who solves real operational problems, fast. Hi, I&rsquo;m John. I work between executives and developers to set up scalable and efficient product management processes that <em>they</em> can own long term.
           </p>
           <div className="ctas">
-            <a className="btn btn-primary" href="#contact">Start a conversation <span className="arrow">→</span></a>
+            <a className="btn btn-primary" href="#contact">Let's chat <span className="arrow">→</span></a>
             <a className="btn btn-ghost" href="#work">See how I&rsquo;d work</a>
           </div>
           <div className="hero-meta">
@@ -251,7 +251,7 @@ function Contact({ scope, setScope }) {
     <section id="contact" className="contact" data-screen-label="06 Contact">
       <div className="wrap contact-grid">
         <div>
-          <Eyebrow>Start a conversation</Eyebrow>
+          <Eyebrow>Let's chat</Eyebrow>
           <h2>Tell me what&rsquo;s <em>broken in your team.</em></h2>
           <p className="blurb">
             One short reply from me within two business days. If I&rsquo;m a fit, I book a 30-minute call.
