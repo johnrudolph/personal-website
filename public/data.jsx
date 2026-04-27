@@ -39,7 +39,7 @@ const ERAS = [
     year: "2023 — Present",
     current: true,
     title: <>Fractional PM <em>&amp; consultant</em></>,
-    blurb: <>Now I work with <a className="lnk" href="https://thunk.dev" target="_blank" rel="noreferrer">Thunk</a> &mdash;, helping clients build excellent processes that they can actually run themselves.</>,
+    blurb: <>Now I work with <a className="lnk" href="https://thunk.dev" target="_blank" rel="noreferrer">Thunk, helping clients build excellent processes that they can actually run themselves.</>,
     quotes: [
       {
         body: "It was a pleasure to work with John to modernize and reimagine Laravel Forge. He brought sharp ideas, great taste, and helped us ship our most ambitious ideas.",

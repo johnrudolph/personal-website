@@ -254,7 +254,7 @@ function Contact({ scope, setScope }) {
           <Eyebrow>Start a conversation</Eyebrow>
           <h2>Tell me what&rsquo;s <em>broken in your team.</em></h2>
           <p className="blurb">
-            One short reply from me within two business days. If I&rsquo;m a fit, I book a 30-minute call. No pitch deck, no funnel.
+            One short reply from me within two business days. If I&rsquo;m a fit, I book a 30-minute call.
           </p>
           <div className="quick">
             <a href="#">
@@ -300,7 +300,6 @@ function Contact({ scope, setScope }) {
                 <textarea id="f-msg" rows="3" value={form.message} onChange={set("message")} placeholder="We&rsquo;re six engineers, no PM, and roadmap meetings are a fight…" />
               </div>
               <div className="submit-row">
-                <span className="note">No newsletter, no follow-up sequence. Just one human reply.</span>
                 <button type="submit" className="btn btn-primary">Send <span className="arrow">→</span></button>
               </div>
             </>
@@ -343,7 +342,6 @@ function Footer() {
       <div className="wrap footnote">
         <span>© 2026 John Rudolph Drexler</span>
         <span>johnrudolphdrexler.com</span>
-        <span>Made with care, not a template.</span>
       </div>
     </footer>
   );
