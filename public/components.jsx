@@ -339,14 +339,6 @@ function Footer() {
           <a href="#beyond">Beyond work</a>
           <a href="#contact">Contact</a>
         </div>
-        <div className="col">
-          <h4>Elsewhere</h4>
-          <a href="https://podcast.thunk.dev/" target="_blank" rel="noreferrer">Talking Businessly</a>
-          <a href="https://notesonplay.transistor.fm/" target="_blank" rel="noreferrer">Notes on Play</a>
-          <a href="https://thesocialgame.gg/" target="_blank" rel="noreferrer">The Social Game</a>
-          <a href="https://www.linkedin.com/in/jdrexler/" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a href="https://bsky.app/profile/johnrudolphdrexler.com" target="_blank" rel="noreferrer">Bluesky</a>
-        </div>
       </div>
       <div className="wrap footnote">
         <span>© 2026 John Rudolph Drexler</span>
