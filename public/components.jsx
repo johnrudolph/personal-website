@@ -1,5 +1,28 @@
 // components.jsx — building blocks
 
+function readCookie(name) {
+  const match = document.cookie.match(new RegExp("(?:^|; )" + name.replace(/([.$?*|{}()[\]\\/+^])/g, "\\$1") + "=([^;]*)"));
+  return match ? decodeURIComponent(match[1]) : null;
+}
+
+async function postJson(url, payload) {
+  const xsrf = readCookie("XSRF-TOKEN");
+  const res = await fetch(url, {
+    method: "POST",
+    credentials: "same-origin",
+    headers: {
+      "Content-Type": "application/json",
+      "Accept": "application/json",
+      "X-Requested-With": "XMLHttpRequest",
+      ...(xsrf ? { "X-XSRF-TOKEN": xsrf } : {}),
+    },
+    body: JSON.stringify(payload),
+  });
+  let data = null;
+  try { data = await res.json(); } catch (_) {}
+  return { ok: res.ok, status: res.status, data };
+}
+
 function Eyebrow({ children }) {
   return <div className="eyebrow">{children}</div>;
 }
@@ -37,7 +60,7 @@ function Hero({ onPickScope }) {
           </p>
           <div className="ctas">
             <a className="btn btn-primary" href="#contact">Let's chat <span className="arrow">→</span></a>
-            <a className="btn btn-ghost" href="#work">See how I&rsquo;d work</a>
+            <a className="btn btn-ghost" href="#work">See how I work</a>
           </div>
           <div className="hero-meta">
             <span>1 client slot open</span>
@@ -243,9 +266,33 @@ function Beyond() {
 
 function Contact({ scope, setScope }) {
   const [sent, setSent] = React.useState(false);
-  const [form, setForm] = React.useState({ name:"", email:"", company:"", message:"" });
-  const onSubmit = (e) => { e.preventDefault(); setSent(true); };
+  const [submitting, setSubmitting] = React.useState(false);
+  const [error, setError] = React.useState(null);
+  const [form, setForm] = React.useState({ name:"", email:"", company:"", message:"", website:"" });
+  const startedAt = React.useRef(Date.now());
   const set = (k) => (e) => setForm({ ...form, [k]: e.target.value });
+  const onSubmit = async (e) => {
+    e.preventDefault();
+    if (submitting) return;
+    setSubmitting(true);
+    setError(null);
+    const { ok, data } = await postJson("/contact", {
+      name: form.name,
+      email: form.email,
+      company: form.company,
+      scope,
+      message: form.message,
+      website: form.website,
+      started_at: startedAt.current,
+    });
+    setSubmitting(false);
+    if (ok) {
+      setSent(true);
+    } else {
+      const firstError = data && data.errors ? Object.values(data.errors)[0]?.[0] : null;
+      setError(firstError || "Something went wrong — please try again.");
+    }
+  };
 
   return (
     <section id="contact" className="contact" data-screen-label="06 Contact">
@@ -263,7 +310,7 @@ function Contact({ scope, setScope }) {
             </a>
           </div>
         </div>
-        <form className="form" onSubmit={onSubmit}>
+        <form className="form" onSubmit={onSubmit} noValidate>
           {sent ? (
             <div className="form-success">
               <div className="check">✓</div>
@@ -275,16 +322,16 @@ function Contact({ scope, setScope }) {
               <div className="row2">
                 <div className="field">
                   <label htmlFor="f-name">Name</label>
-                  <input id="f-name" required value={form.name} onChange={set("name")} placeholder="Jane Hart" />
+                  <input id="f-name" required value={form.name} onChange={set("name")} placeholder="Jane Hart" autoComplete="name" />
                 </div>
                 <div className="field">
                   <label htmlFor="f-email">Email</label>
-                  <input id="f-email" type="email" required value={form.email} onChange={set("email")} placeholder="jane@team.com" />
+                  <input id="f-email" type="email" required value={form.email} onChange={set("email")} placeholder="jane@team.com" autoComplete="email" />
                 </div>
               </div>
               <div className="field">
                 <label htmlFor="f-co">Company</label>
-                <input id="f-co" value={form.company} onChange={set("company")} placeholder="Where you work" />
+                <input id="f-co" value={form.company} onChange={set("company")} placeholder="Where you work" autoComplete="organization" />
               </div>
               <div className="field">
                 <label htmlFor="f-scope">What you&rsquo;re thinking</label>
@@ -299,8 +346,14 @@ function Contact({ scope, setScope }) {
                 <label htmlFor="f-msg">A few sentences on what&rsquo;s going on</label>
                 <textarea id="f-msg" rows="3" value={form.message} onChange={set("message")} placeholder="We&rsquo;re six engineers, no PM, and roadmap meetings are a fight…" />
               </div>
+              {/* honeypot — hidden from humans */}
+              <div aria-hidden="true" style={{position:"absolute",left:"-10000px",top:"auto",width:1,height:1,overflow:"hidden"}}>
+                <label htmlFor="f-website">Website</label>
+                <input id="f-website" type="text" tabIndex="-1" autoComplete="off" value={form.website} onChange={set("website")} />
+              </div>
+              {error && <div className="form-error" role="alert" style={{color:"#b91c1c",fontSize:14,marginTop:8}}>{error}</div>}
               <div className="submit-row">
-                <button type="submit" className="btn btn-primary">Send <span className="arrow">→</span></button>
+                <button type="submit" className="btn btn-primary" disabled={submitting}>{submitting ? "Sending…" : "Send"} <span className="arrow">→</span></button>
               </div>
             </>
           )}
@@ -312,7 +365,29 @@ function Contact({ scope, setScope }) {
 
 function Footer() {
   const [subbed, setSubbed] = React.useState(false);
-  const onSub = (e) => { e.preventDefault(); setSubbed(true); };
+  const [submitting, setSubmitting] = React.useState(false);
+  const [error, setError] = React.useState(null);
+  const [email, setEmail] = React.useState("");
+  const [website, setWebsite] = React.useState("");
+  const startedAt = React.useRef(Date.now());
+  const onSub = async (e) => {
+    e.preventDefault();
+    if (submitting) return;
+    setSubmitting(true);
+    setError(null);
+    const { ok, data } = await postJson("/subscribe", {
+      email,
+      website,
+      started_at: startedAt.current,
+    });
+    setSubmitting(false);
+    if (ok) {
+      setSubbed(true);
+    } else {
+      const firstError = data && data.errors ? Object.values(data.errors)[0]?.[0] : null;
+      setError(firstError || "Something went wrong — please try again.");
+    }
+  };
   return (
     <footer>
       <div className="wrap foot">
@@ -324,9 +399,13 @@ function Footer() {
           {subbed ? (
             <div style={{fontFamily:"var(--mono)",fontSize:12,color:"var(--accent)",letterSpacing:".06em",textTransform:"uppercase"}}>✓ Subscribed</div>
           ) : (
-            <form className="news" onSubmit={onSub}>
-              <input type="email" required placeholder="you@team.com" />
-              <button type="submit">Subscribe</button>
+            <form className="news" onSubmit={onSub} noValidate>
+              <input type="email" required placeholder="you@team.com" value={email} onChange={(e) => setEmail(e.target.value)} autoComplete="email" />
+              <button type="submit" disabled={submitting}>{submitting ? "…" : "Subscribe"}</button>
+              <div aria-hidden="true" style={{position:"absolute",left:"-10000px",top:"auto",width:1,height:1,overflow:"hidden"}}>
+                <input type="text" tabIndex="-1" autoComplete="off" value={website} onChange={(e) => setWebsite(e.target.value)} />
+              </div>
+              {error && <div role="alert" style={{color:"#b91c1c",fontSize:12,marginTop:6}}>{error}</div>}
             </form>
           )}
         </div>

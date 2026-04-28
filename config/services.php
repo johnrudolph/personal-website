@@ -16,6 +16,14 @@ return [
 
     'postmark' => [
         'token' => env('POSTMARK_TOKEN'),
+        'broadcast_stream' => env('POSTMARK_BROADCAST_STREAM', 'broadcast'),
+        'transactional_stream' => env('POSTMARK_TRANSACTIONAL_STREAM', 'outbound'),
+        'webhook_user' => env('POSTMARK_WEBHOOK_USER'),
+        'webhook_password' => env('POSTMARK_WEBHOOK_PASSWORD'),
+    ],
+
+    'contact' => [
+        'recipient' => env('CONTACT_RECIPIENT', 'hi@johnrudolphdrexler.com'),
     ],
 
     'ses' => [

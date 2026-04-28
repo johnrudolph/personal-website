@@ -55,10 +55,12 @@ return [
 
         'postmark' => [
             'transport' => 'postmark',
-            // 'message_stream_id' => env('POSTMARK_MESSAGE_STREAM_ID'),
-            // 'client' => [
-            //     'timeout' => 5,
-            // ],
+            'message_stream_id' => env('POSTMARK_TRANSACTIONAL_STREAM', 'outbound'),
+        ],
+
+        'postmark-broadcast' => [
+            'transport' => 'postmark',
+            'message_stream_id' => env('POSTMARK_BROADCAST_STREAM', 'broadcast'),
         ],
 
         'resend' => [
