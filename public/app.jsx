@@ -1,16 +1,14 @@
 function App() {
-  const [scope, setScope] = React.useState("30-day assessment");
-
   return (
     <>
       <Nav />
       <main>
         <Hero />
         <TimelineSection />
-        <Offerings onPickScope={setScope} />
+        <Offerings />
         <VoiceSection />
         <Beyond />
-        <Contact scope={scope} setScope={setScope} />
+        <Contact />
       </main>
       <Footer />
     </>

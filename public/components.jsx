@@ -134,10 +134,9 @@ function TimelineSection() {
   );
 }
 
-function Offerings({ onPickScope }) {
-  const handleClick = (o) => (e) => {
+function Offerings() {
+  const handleClick = (e) => {
     e.preventDefault();
-    if (onPickScope) onPickScope(o.scopeValue);
     const el = document.getElementById("contact");
     if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
   };
@@ -150,7 +149,7 @@ function Offerings({ onPickScope }) {
         </div>
         <div className="offers">
           {window.OFFERS.map((o, i) => (
-            <a className="offer offer-link" key={i} href="#contact" onClick={handleClick(o)}>
+            <a className="offer offer-link" key={i} href="#contact" onClick={handleClick}>
               {o.badge && <div className="badge">{o.badge}</div>}
               <div className="num">{o.num}</div>
               <h3>{o.title}</h3>
@@ -264,36 +263,7 @@ function Beyond() {
   );
 }
 
-function Contact({ scope, setScope }) {
-  const [sent, setSent] = React.useState(false);
-  const [submitting, setSubmitting] = React.useState(false);
-  const [error, setError] = React.useState(null);
-  const [form, setForm] = React.useState({ name:"", email:"", company:"", message:"", website:"" });
-  const startedAt = React.useRef(Date.now());
-  const set = (k) => (e) => setForm({ ...form, [k]: e.target.value });
-  const onSubmit = async (e) => {
-    e.preventDefault();
-    if (submitting) return;
-    setSubmitting(true);
-    setError(null);
-    const { ok, data } = await postJson("/contact", {
-      name: form.name,
-      email: form.email,
-      company: form.company,
-      scope,
-      message: form.message,
-      website: form.website,
-      started_at: startedAt.current,
-    });
-    setSubmitting(false);
-    if (ok) {
-      setSent(true);
-    } else {
-      const firstError = data && data.errors ? Object.values(data.errors)[0]?.[0] : null;
-      setError(firstError || "Something went wrong — please try again.");
-    }
-  };
-
+function Contact() {
   return (
     <section id="contact" className="contact" data-screen-label="06 Contact">
       <div className="wrap contact-grid">
@@ -301,63 +271,14 @@ function Contact({ scope, setScope }) {
           <Eyebrow>Let's chat</Eyebrow>
           <h2>Tell me what&rsquo;s <em>broken in your team.</em></h2>
           <p className="blurb">
-            One short reply from me within two business days. If I&rsquo;m a fit, I book a 30-minute call.
+            Grab 30 minutes on my calendar. If I&rsquo;m a fit, we&rsquo;ll figure out the shape of the work together.
           </p>
-          <div className="quick">
-            <a href="#">
-              <span><span className="lbl">Calendly</span><br/><span className="val">Book a 30-min intro call</span></span>
-              <span className="arr">↗</span>
-            </a>
-          </div>
         </div>
-        <form className="form" onSubmit={onSubmit} noValidate>
-          {sent ? (
-            <div className="form-success">
-              <div className="check">✓</div>
-              <h3>Got it &mdash; talk soon.</h3>
-              <p>You&rsquo;ll hear back within two business days.</p>
-            </div>
-          ) : (
-            <>
-              <div className="row2">
-                <div className="field">
-                  <label htmlFor="f-name">Name</label>
-                  <input id="f-name" required value={form.name} onChange={set("name")} placeholder="Jane Hart" autoComplete="name" />
-                </div>
-                <div className="field">
-                  <label htmlFor="f-email">Email</label>
-                  <input id="f-email" type="email" required value={form.email} onChange={set("email")} placeholder="jane@team.com" autoComplete="email" />
-                </div>
-              </div>
-              <div className="field">
-                <label htmlFor="f-co">Company</label>
-                <input id="f-co" value={form.company} onChange={set("company")} placeholder="Where you work" autoComplete="organization" />
-              </div>
-              <div className="field">
-                <label htmlFor="f-scope">What you&rsquo;re thinking</label>
-                <select id="f-scope" value={scope} onChange={(e) => setScope(e.target.value)}>
-                  <option>30-day assessment</option>
-                  <option>Ongoing fractional PM</option>
-                  <option>Not sure yet — let&rsquo;s talk</option>
-                  <option>Speaking / podcast</option>
-                </select>
-              </div>
-              <div className="field">
-                <label htmlFor="f-msg">A few sentences on what&rsquo;s going on</label>
-                <textarea id="f-msg" rows="3" value={form.message} onChange={set("message")} placeholder="We&rsquo;re six engineers, no PM, and roadmap meetings are a fight…" />
-              </div>
-              {/* honeypot — hidden from humans */}
-              <div aria-hidden="true" style={{position:"absolute",left:"-10000px",top:"auto",width:1,height:1,overflow:"hidden"}}>
-                <label htmlFor="f-website">Website</label>
-                <input id="f-website" type="text" tabIndex="-1" autoComplete="off" value={form.website} onChange={set("website")} />
-              </div>
-              {error && <div className="form-error" role="alert" style={{color:"#b91c1c",fontSize:14,marginTop:8}}>{error}</div>}
-              <div className="submit-row">
-                <button type="submit" className="btn btn-primary" disabled={submitting}>{submitting ? "Sending…" : "Send"} <span className="arrow">→</span></button>
-              </div>
-            </>
-          )}
-        </form>
+        <div className="contact-cta">
+          <a className="btn btn-primary" href="https://calendly.com/john-9hy/30min" target="_blank" rel="noreferrer">
+            Book a 30-min intro call <span className="arrow">→</span>
+          </a>
+        </div>
       </div>
     </section>
   );
