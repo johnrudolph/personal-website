@@ -8,8 +8,8 @@
         "php": "^8.2",
         "laravel/framework": "^11.9",
         "laravel/tinker": "^2.9",
-        "livewire/livewire": "~3.6.4",
-        "livewire/volt": "^1.0",
+        "livewire/livewire": "^4.0",
+        "livewire/volt": "^1.7",
         "symfony/postmark-mailer": "^7.1"
     },
     "require-dev": {
