@@ -36,10 +36,9 @@ const ERAS = [
     ],
   },
   {
-    year: "2023 — Present",
-    current: true,
+    year: "2023 — 2026",
     title: <>Fractional PM <em>&amp; consultant</em></>,
-    blurb: <>Now I work with <a className="lnk" href="https://thunk.dev" target="_blank" rel="noreferrer">Thunk</a>, helping clients build excellent processes that they can actually run themselves.</>,
+    blurb: <>With <a className="lnk" href="https://thunk.dev" target="_blank" rel="noreferrer">Thunk</a>, I helped clients build excellent processes that they could actually run themselves.</>,
     quotes: [
       {
         body: "It was a pleasure to work with John to modernize and reimagine Laravel Forge. He brought sharp ideas, great taste, and helped us ship our most ambitious ideas.",
@@ -73,37 +72,12 @@ const ERAS = [
       },
     ],
   },
-];
-
-const OFFERS = [
   {
-    id: "ongoing",
-    scopeValue: "Ongoing fractional PM",
-    num: "01 / Ongoing",
-    title: <>The 80/20 PM</>,
-    lede: "Part-time fractional product management. One or two days a week, embedded in your team.",
-    bullets: [
-      "Roadmap, prioritization, and weekly delivery cadence",
-      "Stand-ups, planning, and stakeholder communication",
-      "Scale up or down easily, with 2 weeks notice",
-      "Async-friendly: works for distributed teams",
-    ],
-    meta: { left: "1–2 days / week", right: "Monthly retainer" },
-  },
-  {
-    id: "assessment",
-    scopeValue: "30-day assessment",
-    num: "02 / One-time",
-    title: <>30-Day <em>Assessment</em></>,
-    lede: "I interview everyone, map your processes end-to-end, and implement a concrete plan with you. By day 30 you have v1 of a product practice you can actually run.",
-    bullets: [
-      "Full team interviews + process audit",
-      "Written diagnosis with prioritized recommendations",
-      "Implementation of v1 rituals, artifacts, and tooling",
-      "Hand-off that you can run with",
-    ],
-    meta: { left: "30 days, fixed scope", right: "Flat fee" },
-    badge: "Most popular",
+    year: "2026 — Present",
+    current: true,
+    title: <>Datadog</>,
+    blurb: <>Now I&rsquo;m a Technical Product Manager at <a className="lnk" href="https://www.datadoghq.com/" target="_blank" rel="noreferrer">Datadog</a>.</>,
+    quotes: [],
   },
 ];
 
@@ -216,4 +190,4 @@ const SOCIALS = [
   },
 ];
 
-Object.assign(window, { ERAS, OFFERS, VIDEOS, PODCASTS, BEYOND, SOCIALS });
+Object.assign(window, { ERAS, VIDEOS, PODCASTS, BEYOND, SOCIALS });

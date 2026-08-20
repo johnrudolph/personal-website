@@ -5,7 +5,6 @@ function App() {
       <main>
         <Hero />
         <TimelineSection />
-        <Offerings />
         <VoiceSection />
         <Beyond />
         <Contact />
